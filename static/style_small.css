@@ -137,6 +137,7 @@
     position:absolute;
     top:70px;
     right:6px;
+    transform: scale(1.2);
   }
 
   .commentBox{
