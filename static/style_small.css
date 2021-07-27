@@ -135,11 +135,11 @@
   }
   #about_button {
     position:absolute;
-    top:12px;
-    right:36px;
+    top:6px;
+    right:40px;
   }
   .aboutIcon {
-    content:url("/assets/iconAbout3.png");
+    content:url("./iconAbout3.png");
   }
 
   .commentBox{
