@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <%- include("./partials/partial_2") %>
+  </head>
+  <body>
+    <%- include("./partials/partial_1") %>
+    <div class="new_main">
+
+      <form class="contact_form" action="/engtur" method="post">
+
+        <label for="input1">Enter English Sentence: </label><br>
+        <input class="inputAreas" type="text" name="input1" required><br>
+
+        <label for="input2">Enter Turkish Translation: </label><br>
+        <input class="inputAreas" type="text" name="input2" required><br>
+
+        <button class="commentButton">Submit</button>
+      </form>
+
+    </div>
+
+  </body>
+</html>

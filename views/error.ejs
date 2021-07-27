@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <%- include("./partials/partial_2") %>
+  </head>
+  <body>
+    <%- include("./partials/partial_1") %>
+
+    <div class="new_main">
+      <div id="searchBarArea">
+        <form class="contact_form" action="/" method="post">
+          <label for="input1"> English & Turkish Sentences </label><br>
+          <label for="input1"> Ingilizce & Türkçe Cümleler </label><br>
+          <span id="wordTag" style="display: none;"><%= word1 %></span>
+          <span><input class="inputAreas" type="text" name="input1" id="mainInput" required>&nbsp;&nbsp;&nbsp;
+            <button class="commentButton">Ara-Search</button></span>
+        </form>
+      </div>
+      <br>
+      <span style="color: red; font-weight: bold;">SONUÇ BULUNAMADI / NO RESULTS: </span> <span><%= word1 %></span> <br><br>
+      <span>NOT: Aradığınız kelimeyi küçük harfle yazın.</strong></span><br>
+      <span>NOTE: Write your word in small letters</span>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        document.getElementById("mainInput").value = document.getElementById("wordTag").innerHTML;
+        document.getElementById("mainInput").select();
+      });
+    </script>
+    </div>
+
+  </body>
+</html>
