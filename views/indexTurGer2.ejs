@@ -8,26 +8,26 @@
 
     <div class="new_main">
       <div id="searchBarArea">
-        <label for="input1"> English & Turkish Sentences </label><br>
-        <label for="input1"> Ingilizce & Türkçe Cümleler </label><br>
+        <label for="input1"> Almanca & Türkçe Cümleler </label><br>
+        <label for="input1"> Deutsche & Türkische Sätze </label><br>
 
         <div class="dropdown">
-          <div class="inputAreas2"><img src="/assets/us.svg" style="max-width: 23px;">&nbsp;İngilizce&nbsp;-&nbsp;<img src="/assets/turkey.svg" style="max-width: 23px;">&nbsp;Türkçe &nbsp;&#9660;</div>
+          <div class="inputAreas2"><img src="/assets/turkey.svg" style="max-width: 23px;">&nbsp;Türkçe&nbsp;-&nbsp;<img src="/assets/germany.svg" style="max-width: 23px;">&nbsp;Almanca &nbsp;&#9660;</div>
 
           <div class="dropdown-content">
+            <a href="/german-turkish"> <img src="/assets/germany.svg" style="max-width: 23px;">&nbsp;Almanca&nbsp;-&nbsp;<img src="/assets/turkey.svg" style="max-width: 23px;">&nbsp;Türkçe</a>
+
+            <a href="/"> <img src="/assets/us.svg" style="max-width: 23px;">&nbsp;İngilizce&nbsp;-&nbsp;<img src="/assets/turkey.svg" style="max-width: 23px;">&nbsp;Türkçe</a>
             <a href="/turkish-english"> <img src="/assets/turkey.svg" style="max-width: 23px;">&nbsp;Türkçe&nbsp;-&nbsp;<img src="/assets/us.svg" style="max-width: 23px;">&nbsp;İngilizce</a>
 
             <a href="/coding-skills"> <img src="/assets/us.svg" style="max-width: 23px;">&nbsp;İngilizce&nbsp;-&nbsp;<img src="/assets/turkey.svg" style="max-width: 23px;">&nbsp;Türkçe (+Teknik)</a>
             <a href="/coding-skills"> <img src="/assets/turkey.svg" style="max-width: 23px;">&nbsp;Türkçe&nbsp;-&nbsp;<img src="/assets/us.svg" style="max-width: 23px;">&nbsp;İngilizce (+Teknik)</a>
-
-            <a href="/german-turkish"> <img src="/assets/germany.svg" style="max-width: 23px;">&nbsp;Almanca&nbsp;-&nbsp;<img src="/assets/turkey.svg" style="max-width: 23px;">&nbsp;Türkçe</a>
-            <a href="/turkish-german"> <img src="/assets/turkey.svg" style="max-width: 23px;">&nbsp;Türkçe&nbsp;-&nbsp;<img src="/assets/germany.svg" style="max-width: 23px;">&nbsp;Almanca</a>
           </div>
         </div>
         <span id="wordTag" style="display: none;"><%= word1 %></span>
-        <form class="contact_form" action="/" method="post">
+        <form class="contact_form" action="/turkish-german" method="post">
           <span><input class="inputAreas" type="text" name="input1" id="mainInput" autofocus required>&nbsp;&nbsp;&nbsp;
-            <button class="commentButton">Search-Ara</button></span>
+            <button class="commentButton">Ara-Suche</button></span>
         </form>
       </div>
       <% for (var key in word_data) { %>

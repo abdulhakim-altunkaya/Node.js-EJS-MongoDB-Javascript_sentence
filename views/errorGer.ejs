@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <%- include("./partials/partial_2") %>
+  </head>
+  <body>
+    <%- include("./partials/partial_1") %>
+
+    <div class="new_main">
+      <div id="searchBarArea">
+        <form class="contact_form" action="/german" method="post">
+          <label for="input1"> Deutsche & Türkische Sätze </label><br>
+          <label for="input1"> Almanca & Türkçe Cümleler </label><br>
+          <span id="wordTag" style="display: none;"><%= word1 %></span>
+          <span><input class="inputAreas" type="text" name="input1" id="mainInput" autofocus required>&nbsp;&nbsp;&nbsp;
+            <button class="commentButton">Ara-Suche</button></span>
+        </form>
+      </div>
+      <br>
+      <span style="color: red; font-weight: bold;">SONUÇ BULUNAMADI / KEINE ERGEBNISSE: </span> <span><%= word1 %></span> <br><br>
+      <span>NOT: Aradığınız kelimeyi küçük harfle yazın veya aşağıdaki alternatif sözlüklerde arayın.</span><br>
+      <span>HINWEIS: Schreiben Sie Ihr Wort in Kleinbuchstaben oder suchen Sie in alternativen Wörterbüchern unten.</span>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        document.getElementById("mainInput").value = document.getElementById("wordTag").innerHTML;
+        document.getElementById("mainInput").select();
+      });
+    </script>
+    </div>
+
+  </body>
+</html>
