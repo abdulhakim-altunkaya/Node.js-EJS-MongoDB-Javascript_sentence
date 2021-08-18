@@ -251,6 +251,10 @@
     padding-top: 2px;
     padding-bottom: 2px;
   }
+
+  .arrowSign{
+    float: right;
+  }
   #searchBarArea{
     text-align: center;
   }
