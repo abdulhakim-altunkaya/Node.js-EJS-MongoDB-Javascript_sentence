@@ -6,6 +6,8 @@ const TurengModel = require("./DB/turengModel");
 const AboutModel = require("./DB/aboutModel");
 const ModelTurGer = require("./DB/ModelTurGer");
 const ModelGerTur = require("./DB/ModelGerTur");
+const ModelTechTurEng = require("./DB/ModelTechTurEng");
+const ModelTechEngTur = require("./DB/ModelTechEngTur")
 
 const app = express ();
 connectDB();
@@ -54,7 +56,7 @@ app.post("/turkish-english", function(req, res){
       EngturModel.find({$text:{$search: word2}}).then(function(records){
         if (records.length == 0) {
           res.status(404);
-          res.render("error", {word1});
+          res.render("errorTurEng", {word1});
         } else {
           res.render("indexTurEng2", {word_data: records, word1});
         };
@@ -76,7 +78,7 @@ app.post("/german-turkish", function(req, res){
       ModelTurGer.find({$text:{$search: word2}}).then(function(records){
         if (records.length == 0) {
           res.status(404);
-          res.render("errorGer", {word1});
+          res.render("errorGerTur", {word1});
         } else {
           res.render("indexGerTur2", {word_data: records, word1});
         };
@@ -98,7 +100,7 @@ app.post("/turkish-german", function(req, res){
       ModelGerTur.find({$text:{$search: word2}}).then(function(records){
         if (records.length == 0) {
           res.status(404);
-          res.render("errorGer", {word1});
+          res.render("errorTurGer", {word1});
         } else {
           res.render("indexTurGer2", {word_data: records, word1});
         };
@@ -109,6 +111,50 @@ app.post("/turkish-german", function(req, res){
   });
 });
 
+app.get("/tech-turkish-english", function(req, res){
+  res.render("indexTechTurEng");
+});
+app.post("/tech-turkish-english", function(req, res){
+  const word1 = req.body.input1;
+  const word2 = `\"${word1}\"`; /*1*/
+  ModelTechTurEng.find({$text:{$search: word2}}).then(function(records){
+    if (records.length == 0) { /*2*/
+      ModelTechEngTur.find({$text:{$search: word2}}).then(function(records){
+        if (records.length == 0) {
+          res.status(404);
+          res.render("errorTechTurEng", {word1});
+        } else {
+          res.render("indexTechTurEng2", {word_data: records, word1});
+        };
+      });
+    } else {
+      res.render("indexTechTurEng2", {word_data: records, word1});
+    };
+  });
+});
+
+
+app.get("/tech-english-turkish", function(req, res){
+  res.render("indexTechEngTur");
+});
+app.post("/tech-english-turkish", function(req, res){
+  const word1 = req.body.input1;
+  const word2 = `\"${word1}\"`; /*1*/
+  ModelTechEngTur.find({$text:{$search: word2}}).then(function(records){
+    if (records.length == 0) { /*2*/
+      ModelTechTurEng.find({$text:{$search: word2}}).then(function(records){
+        if (records.length == 0) {
+          res.status(404);
+          res.render("errorTechTurEng", {word1});
+        } else {
+          res.render("indexTechEngTur2", {word_data: records, word1});
+        };
+      });
+    } else {
+      res.render("indexTechEngTur2", {word_data: records, word1});
+    };
+  });
+});
 
 
 

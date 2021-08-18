@@ -5,16 +5,14 @@
   </head>
   <body>
     <%- include("./partials/partial_1") %>
+
     <div class="new_main">
       <span id="wordTag" style="display: none;"><%= word1 %></span>
-      <%- include("./partials/partial_3_TurGer") %>
+      <%- include("./partials/partial_3_GerTur") %>
       <br>
-      <% for (var key in word_data) { %>
-        <div class="commentBox">
-          <span id="sentence1"><strong><%= word_data[key].input1 %></strong></span>
-          <span id="sentence2"><strong><%= word_data[key].input2 %></strong></span>
-        </div>
-      <% } %>
+      <span style="color: red; font-weight: bold;">SONUÇ BULUNAMADI / KEINE ERGEBNISSE: </span> <span><%= word1 %></span> <br><br>
+      <span>NOT: Aradığınız kelimeyi küçük harfle yazın.</span><br>
+      <span>HINWEIS: Schreiben Sie Ihr Wort in Kleinbuchstaben.</span>
     </div>
     <%- include("./partials/partial_5_script") %>
   </body>

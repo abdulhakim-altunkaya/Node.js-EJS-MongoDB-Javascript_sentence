@@ -5,31 +5,10 @@
   </head>
   <body>
     <%- include("./partials/partial_1") %>
-
     <div class="new_main">
-      <div id="searchBarArea">
-        <label for="input1"> Deutsche & Türkische Sätze </label><br>
-        <label for="input1"> Almanca & Türkçe Cümleler </label><br>
-
-        <div class="dropdown">
-          <div class="inputAreas2"><img src="/assets/germany.svg" style="max-width: 23px;">&nbsp;Almanca&nbsp;-&nbsp;<img src="/assets/turkey.svg" style="max-width: 23px;">&nbsp;Türkçe &nbsp;&#9660;</div>
-
-          <div class="dropdown-content">
-            <a href="/turkish-german"> <img src="/assets/turkey.svg" style="max-width: 23px;">&nbsp;Türkçe&nbsp;-&nbsp;<img src="/assets/germany.svg" style="max-width: 23px;">&nbsp;Almanca</a>
-
-            <a href="/"> <img src="/assets/us.svg" style="max-width: 23px;">&nbsp;İngilizce&nbsp;-&nbsp;<img src="/assets/turkey.svg" style="max-width: 23px;">&nbsp;Türkçe</a>
-            <a href="/turkish-english"> <img src="/assets/turkey.svg" style="max-width: 23px;">&nbsp;Türkçe&nbsp;-&nbsp;<img src="/assets/us.svg" style="max-width: 23px;">&nbsp;İngilizce</a>
-
-            <a href="/coding-skills"> <img src="/assets/us.svg" style="max-width: 23px;">&nbsp;İngilizce&nbsp;-&nbsp;<img src="/assets/turkey.svg" style="max-width: 23px;">&nbsp;Türkçe (+Teknik)</a>
-            <a href="/coding-skills"> <img src="/assets/turkey.svg" style="max-width: 23px;">&nbsp;Türkçe&nbsp;-&nbsp;<img src="/assets/us.svg" style="max-width: 23px;">&nbsp;İngilizce (+Teknik)</a>
-          </div>
-        </div>
-        <span id="wordTag" style="display: none;"><%= word1 %></span>
-        <form class="contact_form" action="/german-turkish" method="post">
-          <span><input class="inputAreas" type="text" name="input1" id="mainInput" autofocus required>&nbsp;&nbsp;&nbsp;
-            <button class="commentButton">Ara-Suche</button></span>
-        </form>
-      </div>
+      <span id="wordTag" style="display: none;"><%= word1 %></span>
+      <%- include("./partials/partial_3_GerTur") %>
+      <br>
       <% for (var key in word_data) { %>
         <div class="commentBox">
           <span id="sentence1"><strong><%= word_data[key].input1 %></strong></span>
@@ -37,11 +16,6 @@
         </div>
       <% } %>
     </div>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        document.getElementById("mainInput").value = document.getElementById("wordTag").innerHTML;
-        document.getElementById("mainInput").select();
-      });
-    </script>
+    <%- include("./partials/partial_5_script") %>
   </body>
 </html>
