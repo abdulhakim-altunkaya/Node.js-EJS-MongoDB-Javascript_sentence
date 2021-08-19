@@ -205,6 +205,7 @@
     min-height: 40px;
     margin-top: 2px;
     text-align: left;
+    margin-left: -2px;
     font-size: 19px;
     font-family: inherit;
     padding-left: 5px;
