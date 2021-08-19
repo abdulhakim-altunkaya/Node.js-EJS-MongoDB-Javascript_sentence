@@ -31,7 +31,6 @@
     height: 9%;
     display: flex;
     flex-direction: row;
-    flex-shrink: 0;
   }
   .leftSideUp {
     flex-basis: 50%;
@@ -230,6 +229,7 @@
   }
 
   .dropdown{
+    display: inline-block;
     margin-left: 5px;
     font-family: "Maven Pro";
     display: flex;
