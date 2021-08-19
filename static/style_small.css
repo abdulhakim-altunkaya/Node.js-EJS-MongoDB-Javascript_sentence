@@ -140,6 +140,15 @@
     color: #001f3f;
     font-weight: bold;
   }
+  .commentAboutBox{
+    background-color: #fdfd96;
+    border: 1px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    margin-left: 0;
+    width: 98%;
+  }
 
   .commentBox{
     background-color: #fdfd96;
@@ -205,7 +214,7 @@
     min-height: 40px;
     margin-top: 2px;
     text-align: left;
-    margin-left: -2px;
+    margin-left: -3px;
     font-size: 19px;
     font-family: inherit;
     padding-left: 5px;
