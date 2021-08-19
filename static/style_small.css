@@ -207,13 +207,30 @@
   .inputAreas {
     border: 2px solid #8842d5;
     border-radius: 5px;
-    min-width: 270px;
-    outline: none;
-    margin-top: 2px;
+    width: 280px;
     min-height: 25px;
+    margin-top: 2px;
     font-family: inherit;
     font-size: inherit;
-    max-width: 100%;
+    padding-left: 5px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    outline: none;
+  }
+  .inputAreas2 {
+    border: 2px solid #8842d5;
+    width: 280px;
+    min-height: 25px;
+    margin-top: 2px;
+    text-align: left;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    outline: none;
   }
 
   .dropdown{
@@ -243,17 +260,7 @@
   .dropdown-content a:hover {
     background-color: #00b362;
   }
-  .inputAreas2 {
-    border: 2px solid #8842d5;
-    min-width: 270px;
-    text-align: left;
-    border-radius: 5px;
-    font-size: 20px;
-    padding-left: 5px;
-    padding-right: 2px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-  }
+
   .arrowSign{
     float: right;
   }
