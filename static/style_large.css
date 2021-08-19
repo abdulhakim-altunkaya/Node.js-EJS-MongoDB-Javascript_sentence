@@ -31,6 +31,37 @@
     display: flex;
     flex-direction: row;
   }
+  .leftSideUp {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .rightSideUp {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  #logo-link {
+    text-decoration: none;
+    color: black;
+    user-select: none;
+    text-shadow:
+    -2px -2px 0 #ffffff,
+    2px -2px 0 #ffffff,
+    -2px 2px 0 #ffffff,
+    2px 2px 0 #ffffff;
+    font-size: 32px;
+    font-family: "Lobster";
+    padding-left: 6px;
+  }
+  .rightSideUp span {
+    padding-right: 8px;
+  }
+  #home_button {
+    width: 5vmin;
+  }
   .new_colorBar{
     width:100%;
     background-color: red;
@@ -81,31 +112,8 @@
     line-height: 150%;
   }
 
-  #logo-link {
-    text-decoration: none;
-    color: black;
-    user-select: none;
-  }
-  #logo {
-    margin-left: 20px;
-    font-size: 32px;
-    font-family: "Lobster";
-    text-shadow:
-    -2px -2px 0 #ffffff,
-    2px -2px 0 #ffffff,
-    -2px 2px 0 #ffffff,
-    2px 2px 0 #ffffff;
-  }
-  #menu_button {
-    transform: translate(0px,5px)
-  }
 
-  .dropdown{
-    display: inline-block;
-    margin-left: 5px;
-    font-family: "Maven Pro";
-    font-size: 17px;
-  }
+
 
   .new_main::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -124,17 +132,6 @@
     background-color: #555;
   }
 
-  #home_button {
-    position:absolute;
-    top:15px;
-    right:15px;
-    transform: scale(1.8);
-  }
-  #about_button {
-    position:absolute;
-    top:75px;
-    right:6px;
-  }
 
   .aboutLinks a {
     text-decoration: none;
@@ -221,6 +218,10 @@
   }
 
   .dropdown{
+    display: inline-block;
+    margin-left: 5px;
+    font-family: "Maven Pro";
+    font-size: 17px;
     margin-bottom: 9px;
     margin-top: 13px;
   }
@@ -277,6 +278,33 @@
     font-family: "Montserrat";
   }
 
+  .contact_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+
+
+
+  .App-logo {
+    height: 7vmin;
+    padding-left: 6px;
+    padding-top: 2px;
+    pointer-events: none;
+    user-select: none;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 30s linear;
+    }
+  }
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
 
 }
