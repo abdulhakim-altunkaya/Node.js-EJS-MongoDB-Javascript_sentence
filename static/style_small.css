@@ -61,7 +61,7 @@
     padding-right: 8px;
   }
   #home_button {
-    width: 6vmin;
+    width: 9vmin;
   }
 
 
@@ -201,12 +201,9 @@
   .inputAreas {
     border: 2px solid #8842d5;
     border-radius: 5px;
-    width: 280px;
-    min-height: 25px;
+    width: 300px;
+    min-height: 30px;
     margin-top: 2px;
-    text-align: left;
-    font-family: inherit;
-    font-size: inherit;
     text-align: left;
     margin-left: 3px;
     padding-left: 5px;
@@ -218,12 +215,10 @@
   .inputAreas2 {
     border: 2px solid #8842d5;
     border-radius: 5px;
-    width: 280px;
+    width: 300px;
     min-height: 25px;
     margin-top: 2px;
     text-align: left;
-    font-family: inherit;
-    font-size: inherit;
     padding-left: 5px;
     padding-right: 2px;
     padding-top: 2px;
@@ -239,7 +234,7 @@
     align-items: center;
   }
   .dropdown-content{
-    min-width: 270px;
+    min-width: 300px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     background-color: white;
     margin-top: 1px;
@@ -283,16 +278,10 @@
     font-family: "Montserrat";
   }
 
-  .contact_form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-
     .App-logo {
-      height: 7vmin;
+      height: 9vmin;
       padding-left: 6px;
+      margin-left: 5px;
       padding-top: 2px;
       pointer-events: none;
       user-select: none;
