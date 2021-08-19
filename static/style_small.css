@@ -108,12 +108,7 @@
     transform: translate(0px,5px)
   }
 
-  .dropdown{
-    display: inline-block;
-    margin-left: 5px;
-    font-family: "Maven Pro";
-    font-size: 17px;
-  }
+
 
 
     /* Hide scrollbar for Chrome, Safari and Opera */
@@ -237,8 +232,11 @@
   }
 
   .dropdown{
-    margin-bottom: 9px;
-    margin-top: 13px;
+    margin-left: 5px;
+    font-family: "Maven Pro";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .dropdown-content{
     min-width: 270px;
@@ -269,6 +267,8 @@
   }
 
   #searchBarArea{
+    display: flex;
+    flex-direction: column;
     text-align: center;
   }
   #searchBarArea label {
