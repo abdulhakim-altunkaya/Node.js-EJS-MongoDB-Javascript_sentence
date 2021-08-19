@@ -202,12 +202,11 @@
     border: 2px solid #8842d5;
     border-radius: 5px;
     width: 330px;
-    min-height: 35px;
+    min-height: 40px;
     margin-top: 2px;
     text-align: left;
-    font-size: inherit;
+    font-size: 19px;
     font-family: inherit;
-    margin-left: 3px;
     padding-left: 5px;
     padding-right: 2px;
     padding-top: 2px;
@@ -281,7 +280,7 @@
   }
 
     .App-logo {
-      height: 9vmin;
+      height: 10vmin;
       padding-left: 6px;
       margin-left: 5px;
       padding-top: 2px;
