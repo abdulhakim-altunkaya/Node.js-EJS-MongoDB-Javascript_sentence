@@ -135,6 +135,13 @@
     top:75px;
     right:6px;
   }
+
+  .aboutLinks a {
+    text-decoration: none;
+    color: #001f3f;
+    font-weight: bold;
+  }
+
   .commentBox{
     background-color: #fdfd96;
     border: 1px solid #ddd;
@@ -269,5 +276,7 @@
     padding: 4px;
     font-family: "Montserrat";
   }
+
+
 
 }
