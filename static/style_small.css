@@ -210,8 +210,10 @@
     width: 280px;
     min-height: 25px;
     margin-top: 2px;
+    text-align: left;
     font-family: inherit;
     font-size: inherit;
+    text-align: left;
     padding-left: 5px;
     padding-right: 2px;
     padding-top: 2px;
@@ -220,12 +222,13 @@
   }
   .inputAreas2 {
     border: 2px solid #8842d5;
+    border-radius: 5px;
     width: 280px;
     min-height: 25px;
     margin-top: 2px;
     text-align: left;
-    border-radius: 5px;
-    font-size: 20px;
+    font-family: inherit;
+    font-size: inherit;
     padding-left: 5px;
     padding-right: 2px;
     padding-top: 2px;
@@ -283,5 +286,6 @@
   .contact_form {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }

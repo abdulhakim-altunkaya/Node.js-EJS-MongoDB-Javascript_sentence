@@ -4,6 +4,6 @@ $(document).ready(function(){
   });
 
   if($( window ).width() < 960){
-      $("#buttonSpace").css("display", "none")
+      $("#buttonSpace").remove();
   }
 });
