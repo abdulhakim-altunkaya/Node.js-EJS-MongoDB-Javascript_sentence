@@ -60,13 +60,9 @@
   .rightSideUp span {
     padding-right: 8px;
   }
-  #home_button {
-    width: 9vmin;
+  .aboutIcon{
+    height: 8vmin;
   }
-
-
-
-
   .new_colorBar{
     width:100%;
     background-color: red;
